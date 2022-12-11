@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;
+
     public float MoveSpeed;
     private Vector2 moveInput;
 
@@ -22,6 +24,11 @@ public class PlayerController : MonoBehaviour
     public float timeBetweenShots;
 
     private float shotCounter;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             shotCounter -= Time.deltaTime;
 
-            if(shotCounter == 0)
+            if(shotCounter <= 0)
             {
                 Instantiate(bulletToFire, FirePoint.position, FirePoint.rotation);
 
