@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1297174273}
   - component: {fileID: 1297174272}
   - component: {fileID: 1297174271}
+  - component: {fileID: 1297174274}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -207,7 +208,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &1297174274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,8 +287,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-=======
->>>>>>> parent of d116687 (scene modified with new assts)
 --- !u!1001 &5477437137442528165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,6 +298,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5477437136328783525, guid: e78db2e654397884ea5863ebb8799904, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -362465363, guid: 80fbdbf11e532d143b98f3b779a190e4, type: 3}
     - target: {fileID: 5477437136328783707, guid: e78db2e654397884ea5863ebb8799904, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -311,6 +313,14 @@ PrefabInstance:
     - target: {fileID: 5477437137545393965, guid: e78db2e654397884ea5863ebb8799904, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5477437137545393967, guid: e78db2e654397884ea5863ebb8799904, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -117514154, guid: 85ccb573ae3de734fb3ca4a253134c9f, type: 3}
+    - target: {fileID: 5477437137545393967, guid: e78db2e654397884ea5863ebb8799904, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5477437137625613872, guid: e78db2e654397884ea5863ebb8799904, type: 3}
       propertyPath: m_Name
@@ -377,6 +387,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6915039731360076031, guid: c90e8d4975bb1d34983ef4e590d87fe6, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -887451123, guid: 85ccb573ae3de734fb3ca4a253134c9f, type: 3}
+    - target: {fileID: 6915039731360076031, guid: c90e8d4975bb1d34983ef4e590d87fe6, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6915039732772094816, guid: c90e8d4975bb1d34983ef4e590d87fe6, type: 3}
       propertyPath: m_Name
       value: Enemy - Snake
