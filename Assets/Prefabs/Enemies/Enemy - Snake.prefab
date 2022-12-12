@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &6915039732772094816
@@ -174,7 +174,6 @@ MonoBehaviour:
   bullet: {fileID: 1066615022044302894, guid: 841df4ac1271c1a4e8faaca6bbede7c3, type: 3}
   firePoint: {fileID: 3193878146587082358}
   fireRate: 0.5
-  shootRange: 0
   theBody: {fileID: 6915039731360076031}
 --- !u!50 &6915039732772094823
 Rigidbody2D:
