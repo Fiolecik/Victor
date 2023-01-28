@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-
     public float speed = 7.5f;
     public Rigidbody2D theRB;
 
     public GameObject impactEffect;
 
     public int damageToGive = 50;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,20 +23,30 @@ public class PlayerBullet : MonoBehaviour
         theRB.velocity = transform.right * speed;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Instantiate(impactEffect, transform.position, transform.rotation);
+		private void OnTriggerEnter2D(Collider2D other)
+	{
+        Instantiate(impactEffect, transform.position, transform.rotation);   
         Destroy(gameObject);
 
-        if(other.tag == "Enemy")
-        {
+        AudioManager.instance.PlaySFX(13);
+
+        if (other.tag == "Enemy")
+		{
             other.GetComponent<EnemyController>().DamageEnemy(damageToGive);
-
         }
-    }
 
-    private void onBecameInvisible()
-    {
+        if(other.tag == "Boss")
+		{
+            BossController.instance.TakeDamage(damageToGive);
+
+            Instantiate(BossController.instance.hitEffect, transform.position, transform.rotation);
+		}
+        
+	}
+
+	private void OnBecameInvisible()
+	{
         Destroy(gameObject);
-    }
+	}
+
 }

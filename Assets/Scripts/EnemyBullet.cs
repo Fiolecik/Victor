@@ -10,7 +10,7 @@ public class EnemyBullet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        direction = PlayerController.instance.transform.position;
+        direction = PlayerController.instance.transform.position - transform.position;
         direction.Normalize();
     }
 
@@ -20,18 +20,20 @@ public class EnemyBullet : MonoBehaviour
         transform.position += direction * speed * Time.deltaTime;
     }
 
-    private void onTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Player")
-        {
+	private void OnTriggerEnter2D(Collider2D other)
+	{
+		if(other.tag == "Player")
+		{
             PlayerHealthController.instance.DamagePlayer();
-        }
+		}
 
         Destroy(gameObject);
+
+        AudioManager.instance.PlaySFX(13);
     }
 
-    private void onBecameInvisible()
-    {
+	private void OnBecameInvisible()
+	{
         Destroy(gameObject);
-    }
+	}
 }
