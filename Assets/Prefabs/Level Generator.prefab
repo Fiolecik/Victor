@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &592402548462483726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3358844123462367337}
+  - component: {fileID: 9188367701035534666}
+  m_Layer: 0
+  m_Name: Level Generator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3358844123462367337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592402548462483726}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7803304321062951989}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9188367701035534666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 592402548462483726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40463aa116b93b74f9d5ab9e5ecfc747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layoutRoom: {fileID: 0}
+  startColor: {r: 0, g: 0.8028636, b: 1, a: 1}
+  endColor: {r: 1, g: 0, b: 0, a: 1}
+  shopColour: {r: 0.9125825, g: 1, b: 0, a: 1}
+  gunRoomColor: {r: 0.26415092, g: 0.26415092, b: 0.26415092, a: 1}
+  distanceToEnd: 10
+  includeShop: 1
+  minDistanceToShop: 3
+  maxDistanceToShop: 7
+  includeGunRoom: 1
+  minDistanceToGunRoom: 5
+  maxDistanceToGunRoom: 8
+  generatorPoint: {fileID: 7803304321062951989}
+  selectedDirection: 0
+  xOffset: 18
+  yOffset: 10
+  whatIsRoom:
+    serializedVersion: 2
+    m_Bits: 1024
+  rooms:
+    singleUp: {fileID: 0}
+    singleDown: {fileID: 0}
+    singleRight: {fileID: 0}
+    singleLeft: {fileID: 0}
+    doubleUpDown: {fileID: 0}
+    doubleLeftRight: {fileID: 0}
+    doubleUpRight: {fileID: 0}
+    doubleRightDown: {fileID: 0}
+    doubleDownLeft: {fileID: 0}
+    doubleLeftUp: {fileID: 0}
+    tripleUpRightDown: {fileID: 0}
+    tripleRightDownLeft: {fileID: 0}
+    tripleDownLeftUp: {fileID: 0}
+    tripleLeftUpRight: {fileID: 0}
+    fourway: {fileID: 0}
+  centerStart: {fileID: 0}
+  centerEnd: {fileID: 0}
+  centerShop: {fileID: 0}
+  centerGunRoom: {fileID: 0}
+  potentialCenters: []
+--- !u!1 &3722690610888848335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7803304321062951989}
+  m_Layer: 0
+  m_Name: Generation Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7803304321062951989
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3722690610888848335}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3358844123462367337}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
