@@ -51,3 +51,9 @@ TagManager:
   - name: Ground
     uniqueID: 2770589113
     locked: 0
+  - name: Bullets
+    uniqueID: 2724435631
+    locked: 0
+  - name: Enemies
+    uniqueID: 1505456267
+    locked: 0

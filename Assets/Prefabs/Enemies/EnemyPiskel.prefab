@@ -101,10 +101,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1505456267
+  m_SortingLayer: 5
   m_SortingOrder: 0
-  m_Sprite: {fileID: 521397179, guid: b2c98364811a7e14d82a4016dde56f6d, type: 3}
+  m_Sprite: {fileID: -783488987, guid: 85ccb573ae3de734fb3ca4a253134c9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 8053433334547184232}
   - component: {fileID: 3628503212072549580}
   m_Layer: 8
-  m_Name: EnemySnake
+  m_Name: EnemyPiskel
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,16 +234,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theRB: {fileID: 8053433334547184233}
   moveSpeed: 3
-  shouldChasePlayer: 1
-  rangeToChasePlayer: 7
-  shouldRunAway: 0
+  shouldChasePlayer: 0
+  rangeToChasePlayer: 0
+  shouldRunAway: 1
   runawayRange: 7
-  shouldWander: 1
-  wanderLenght: 4
-  pauseLenght: 1.5
+  shouldWander: 0
+  wanderLenght: 0
+  pauseLenght: 0
   shouldPatrol: 0
   patrolPoints: []
-  shouldShoot: 0
+  shouldShoot: 1
   bullet: {fileID: 5819456331581889278, guid: c73098aed36748949aca357bc42013a6, type: 3}
   firePoint: {fileID: 8053433333949461300}
   fireRate: 1
