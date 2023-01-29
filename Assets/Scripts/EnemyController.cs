@@ -184,6 +184,8 @@ public class EnemyController : MonoBehaviour
 
             Instantiate(deathSplatters[selectedSplatter], transform.position, Quaternion.Euler(0f, 0f, rotation * 90f));
 
+            PlayerController.instance.GetExperience(10);
+
             //drop items
             if (shouldDropItem)
             {
